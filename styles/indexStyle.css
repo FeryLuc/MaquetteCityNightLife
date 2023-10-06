@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 body{
     margin: 0;
     padding: 0;
-    
+    overflow: auto;
 }
 .bigContainer{
     box-sizing: border-box;
@@ -11,23 +13,25 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: auto;
+    font-family:'Poppins', sans-serif;
 }
 #pageTitle{
     box-sizing: border-box;
-    width: 100%;
-    height: 100px;
-    border: solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     & h1{
-        height: 50%;
-        border: solid blue;
+        color: white;
+        background-color: #1E1F23;
+        text-align: center;
+        padding: 8px 16px;
     }
 }
 #pageIntro{
     box-sizing: border-box;
     width: 75%;
-    height: 600px;
-    border: solid red;
     margin: 24px auto;
     display: flex;
     flex-direction: column;
@@ -37,8 +41,8 @@ body{
     & img{
         box-sizing: border-box;
         width: 100%;
-        height: 33%;
-        border: 1px solid blue;
+        height: 500px;
+        object-fit: cover;
     }
 
     & section{
@@ -46,155 +50,135 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        padding: 8px;
-        width: 100%;
-        height: 66%;
-        border: 1px solid green;
-
+        padding: 100px;
+        
         & h2{
-            width: 100%;
-            height: 50px;
-            border: 1px solid blue;
+            padding: 16px;
+            margin-top: -32px;
+            color: white;
+            background-color: #1E1F23;
+            text-align: center;
+            transform: rotate(-2.5deg);
+            font-weight: 500;
         }
     
         & p:first-of-type{
-            width: 100%;
-            height: 50px;
-            border: 1px solid blue;
-        }
-    
-        & p:nth-child(3){
-            width: 100%;
-            height: 50px;
-            border: 1px solid blue;
-        }
-    
-        & p:last-of-type{
-            width: 100%;
-            height: 50px;
-            border: 1px solid blue;
+            margin: 60px 0;
+            text-align: center;
+            font-weight: 600;
         }
     }
 }
 #pageContent{
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     width: 75%;
-    height: 100%;
-    border: solid red;
     margin: 0 auto;
-    margin-top: -24px;
-    background-color: rgb(29, 27, 27);
+    background-color: #1E1F23;
 
     #shootSection{
         box-sizing: border-box;
         width: 80%;
-        height: 300px;
-        background-color: black;
-        border: solid blue;
-        margin: 24px auto;
+        background-color: #111113;
+        margin: 0 auto;
 
         & h2{
-            margin: 0;
-            width: 100%;
-            height: 30px;
-            border: 1px solid green;
+            color: white;
+            text-align: center;
+            font-weight: 600;
         }
 
         .line{
             width: 30%;
-            border: 1px solid green;
+            border: 1px solid white;
             margin: 8px auto;
         }
 
         & p{
-            margin: 0;
-            width: 100%;
-            height: 50px;
-            border: 1px solid green;
+            margin: 24px 0;
+            color: white;
+            text-align: center;
+            
         }
         .pictures{
             width: 100%;
-            height: 185px;
-            border: 1px solid green;
             display: flex;
             flex-wrap: wrap;
 
             & img{
-                width: 49%;
-                height: 48%;
-                border: 1px solid gold;
+                object-fit: cover;
+                width: 50%;
+                height: 350px;
             }
         }
     }
 
     #lastContent{
-        box-sizing: border-box;
-        width: 100%;
-        height: 500px;
-        border: 1px solid blue;
+        box-sizing: border-box;       
+        margin-top: 100px;
         display: flex;
         flex-wrap: wrap;
 
+        & img{
+            object-fit: cover;
+            width: 50%;
+            height: 350px;
+        }
+
         & div{
-            width: 48%;
-            height: 30%;
-            border: 1px solid green;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 60px;
+            font-weight: 600;
         }
 
-        & div:nth-child(2) h2{
-            width: 100%;
-            height: 25px;
-            border: 1px solid gold;
-        }
-        & div:nth-child(2) p{
-            width: 100%;
-            height: 100%;
-            border: 1px solid gold;
+        & div:nth-child(2){
+            color: black;
+            background-color: white;
+            width: 50%;
+            text-align: center;
         }
 
-        & div:nth-child(3) h2{
-            width: 100%;
-            height: 25px;
-            border: 1px solid gold;
-        }
-        & div:nth-child(3) p{
-            width: 100%;
-            height: 100%;
-            border: 1px solid gold;
+        & div:nth-child(3){
+            color: white;
+            background-color: #1E1F23;
+            width: 50%;
+            text-align: center;
         }
 
-        & div:last-of-type h2{
-            width: 100%;
-            height: 25px;
-            border: 1px solid gold;
-        }
-        & div:last-of-type p{
-            width: 100%;
-            height: 100%;
-            border: 1px solid gold;
+        & div:nth-child(6){
+            color: black;
+            background-color: white;
+            width: 50%;
+            text-align: center;
         }
     }
 }
 
 
 #pageContact{
-    width: 100%;
-    height: 60px;
     text-align: center;
-    border: solid red;
-
-    & h2{
-        width: 100%;
-        height: 30px;
-        margin: 0;
-        border: 1px solid blue;
-        
+    height: 250px;
+    margin: 0;
+    
+    & h3{
+        margin: 8px 0;
+        color: gray;
     }
     
-    & div{
-        width: 25px;
-        aspect-ratio: 1;
-        display: inline-block;
-        border: 1px solid blue;
+    & i:nth-child(2){
+        font-size: 50px;
+        margin-right: 8px;
+    }
+
+    & i:nth-child(3){
+        font-size: 70px;
+        margin-right: 8px;
+    }
+
+    & i:nth-child(4){
+        font-size: 70px;
     }
 }
